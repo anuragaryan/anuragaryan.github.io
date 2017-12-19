@@ -10,7 +10,7 @@
     <title>Anurag Aryan</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
 
@@ -22,46 +22,53 @@
     <![endif]-->
   </head>
   <body>
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">
-                <a class="brand-link" href="index.html">Anurag Aryan</a>
-              </h3>
-              <nav class="nav nav-masthead">
-                <a class="nav-link" href="#">Work</a>
-                <a class="nav-link" href="#">Backstage</a>
-                <a class="nav-link" href="#">Resume</a>
-                <a class="nav-link" href="#">About</a>
-              </nav>
-            </div>
-          </div>
-          <div class="inner cover">
-            <h1 class="cover-heading">Hi, I'm Anurag.</h1>
-            <p class="lead">I'm currently working as a full-stack web developer at
-            <a href="http://www.weinvest.net">WeInvest</a>.<br/>
-            I'm a software engineer whose interest also lies in music and finance.</p>
-          </div>
-          <div class="mastfoot">
-            <div class="inner social-links">
-              <a target="_blank" href="https://github.com/anuragaryan" class="btn btn-lg btn-secondary"><i class="fa fa-github"></i></a>
-              <a target="_blank" href="https://www.linkedin.com/in/anuragaryan/" class="btn btn-lg btn-secondary"><i class="fa fa-linkedin"></i></a>
-              <a target="_blank" href="docs/resume.pdf" class="btn btn-lg btn-secondary cv">cv</a>
-              <a target="_blank" href="mailto:anurag.aryan2011@gmail.com" class="btn btn-lg btn-secondary"><i class="fa fa-envelope"></i></a>
-            </div>
-            <div class="inner">
-              <p class="copyright">&copy; Anurag Aryan | <script>document.write(new Date().getFullYear())</script></p>
-            </div>
-          </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Anurag Aryan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Blog<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Backstage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid about">
+      <div class="container">
+        <h1 class="heading">Hi, I'm Anurag.</h1>
+        <p class="description">I'm currently working as a full-stack web developer at
+        <a href="http://www.weinvest.net">WeInvest</a>.<br/>
+        I'm a software engineer whose interest also lies in music and finance.</p>
       </div>
     </div>
+    <footer>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="social-links">
+              <a target="_blank" href="https://github.com/anuragaryan" class="btn btn-lg btn-outline-secondary"><i class="fa fa-github"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/anuragaryan/" class="btn btn-lg btn-outline-secondary"><i class="fa fa-linkedin"></i></a>
+              <a target="_blank" href="docs/resume.pdf" class="btn btn-lg btn-outline-secondary cv">cv</a>
+              <a target="_blank" href="mailto:anurag.aryan2011@gmail.com" class="btn btn-lg btn-outline-secondary"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+      </div>
+      <p class="copyright">&copy; Anurag Aryan | <script>document.write(new Date().getFullYear())</script></p>
+    </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
 </html>
