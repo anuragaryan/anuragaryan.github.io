@@ -16,4 +16,5 @@ script:
   - binaries/hugo                       # Generate
 after_success:
   - cp .travis.yml public               # all branches need this file
+  - cp CNAME public                     # all branches need this file
   - bash deploy.sh                      # run the deploy
