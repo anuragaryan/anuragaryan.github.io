@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="container">
+    <h2 class="text-center">{{ .Site.Data.projects.name }}</h2>
+    <div class="panel panel-default">
+      <div class="panel-body">
+      {{ range $i, $el := .Site.Data.projects.source }}
+        <h4>
+          <i class="{{ .icon }}"></i>&nbsp;&nbsp;
+          <a class="project-name" href="#">{{ $el.name }}</a>&nbsp;-&nbsp;{{ $el.description }}
+        </h4>
+      {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

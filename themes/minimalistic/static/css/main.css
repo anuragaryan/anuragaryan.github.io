@@ -1,0 +1,132 @@
+html,
+body {
+  border-top: 0.125em solid #27A822;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/********** Common Style************/
+
+a {
+    color: #27A822;
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #0c8c07;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.17em;
+}
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: 0.83em;
+}
+h6 {
+  font-size: 0.67em;
+}
+.container-fluid {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+/***** Navbar *****/
+.navbar-brand {
+  text-decoration: none;
+  color: inherit;
+  font-size: xx-large;
+  font-weight: 600;
+  border-bottom: .25em solid transparent;
+}
+.nav-link {
+  padding: .25em 0;
+  font-weight: bold;
+  color: #333;
+  background-color: transparent;
+  border-bottom: .25em solid transparent;
+}
+.nav-link:hover,
+.nav-link:focus,
+.brand-link:hover {
+  border-bottom-color: #27A822;
+}
+.navbar-nav {
+  float: right;
+}
+
+/*******About section*******/
+.description {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.btn-outline-secondary {
+  color: #27A822;
+  border-color: #27A822;
+}
+.btn-outline-secondary:focus,
+.btn-outline-secondary:hover {
+  color: #FFF;
+  background-color: #27A822;
+}
+
+/*******Footer Section*******/
+.social-links {
+  text-align: center;
+}
+.copyright {
+  text-align: center;
+  padding: 1em;
+  border-bottom: 0.25em solid #27A822;
+  margin-bottom: 0;
+}
+
+/**********Blog Page************/
+
+.blog-post{
+  padding-top: 15px;
+}
+.blog-title{
+  padding-top: 2px;
+}
+.related-posts h4 {
+  text-align: center;
+}
+.page-not-found {
+  padding-top: 20%;
+}
+.disqus {
+  padding-bottom: 15px;
+}
+.blogpost{
+  text-align: left;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+@media (max-width: 735px) {
+  .navbar-nav {
+    float: left;
+  }
+}

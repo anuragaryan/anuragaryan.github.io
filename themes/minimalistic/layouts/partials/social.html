@@ -1,0 +1,27 @@
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <div class="social-links">
+        {{ if .Site.Params.Social.Github }}
+          <a href="http://github.com/{{ .Site.Params.Social.Github }}" class="btn btn-lg btn-outline-secondary" target="_blank"><i class="fa fa-github"></i></a>
+        {{ end }}
+
+        {{ if .Site.Params.Social.Email }}
+          <a href="mailto:{{ .Site.Params.Social.Email }}" class="btn btn-lg btn-outline-secondary" target="_blank"><i class="fa fa-envelope"></i></a>
+        {{ end }}
+
+        {{ if .Site.Params.Social.Twitter }}
+          <a href="http://twitter.com/{{ .Site.Params.Social.Twitter }}" class="btn btn-lg btn-outline-secondary" target="_blank"><i class="fa fa-twitter"></i></a>
+        {{ end }}
+
+        {{ if .Site.Params.Social.LinkedIn }}
+          <a href="http://linkedin.com/in/{{ .Site.Params.Social.LinkedIn }}" class="btn btn-lg btn-outline-secondary" target="_blank"><i class="fa fa-linkedin"></i></a>
+        {{ end }}
+
+        {{ if .Site.Params.Social.Stackoverflow }}
+          <a href="http://stackoverflow.com/{{ .Site.Params.Social.Stackoverflow }}" class="btn btn-lg btn-outline-secondary" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+        {{ end }}
+        </div>
+    </div>
+  </div>
+</footer>
