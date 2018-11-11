@@ -1,4 +1,4 @@
-baseurl = "http://anuragaryan.com/"
+baseurl = "https://anuragaryan.com/"
 languageCode = "en-US"
 title = "Anurag Aryan"
 # Enable comments by entering your Disqus shortname
@@ -21,9 +21,9 @@ theme = "minimalistic"
 [params.social]
   Github        = "anuragaryan"
   Email         = "anurag.aryan2011@gmail.com"
-  Twitter       = "AnuragRambles"
+  Twitter       = "AnuragCodes"
   LinkedIn      = "anuragaryan"
-  Stackoverflow = ""
+  Stackoverflow = "users/3134957"
 
 ## Main Menu
 [[menu.main]]
