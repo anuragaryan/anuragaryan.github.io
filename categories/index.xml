@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Anurag Aryan</title>
-    <link>http://anuragaryan.com/categories/</link>
+    <link>https://anuragaryan.com/categories/</link>
     <description>Recent content in Categories on Anurag Aryan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     
-	<atom:link href="http://anuragaryan.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://anuragaryan.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>http://anuragaryan.com/categories/development/</link>
+      <link>https://anuragaryan.com/categories/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://anuragaryan.com/categories/development/</guid>
+      <guid>https://anuragaryan.com/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>http://anuragaryan.com/categories/golang/</link>
+      <link>https://anuragaryan.com/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://anuragaryan.com/categories/golang/</guid>
+      <guid>https://anuragaryan.com/categories/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://anuragaryan.com/categories/projects/</link>
+      <link>https://anuragaryan.com/categories/projects/</link>
       <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
       
-      <guid>http://anuragaryan.com/categories/projects/</guid>
+      <guid>https://anuragaryan.com/categories/projects/</guid>
       <description></description>
     </item>
     

@@ -2,75 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Anurag Aryan</title>
-    <link>http://anuragaryan.com/tags/</link>
+    <link>https://anuragaryan.com/tags/</link>
     <description>Recent content in Tags on Anurag Aryan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://anuragaryan.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://anuragaryan.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>http://anuragaryan.com/tags/development/</link>
+      <link>https://anuragaryan.com/tags/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://anuragaryan.com/tags/development/</guid>
+      <guid>https://anuragaryan.com/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>http://anuragaryan.com/tags/go/</link>
+      <link>https://anuragaryan.com/tags/go/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://anuragaryan.com/tags/go/</guid>
+      <guid>https://anuragaryan.com/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>http://anuragaryan.com/tags/golang/</link>
+      <link>https://anuragaryan.com/tags/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://anuragaryan.com/tags/golang/</guid>
+      <guid>https://anuragaryan.com/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>http://anuragaryan.com/tags/hugo/</link>
+      <link>https://anuragaryan.com/tags/hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://anuragaryan.com/tags/hugo/</guid>
+      <guid>https://anuragaryan.com/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>http://anuragaryan.com/tags/projects/</link>
+      <link>https://anuragaryan.com/tags/projects/</link>
       <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
       
-      <guid>http://anuragaryan.com/tags/projects/</guid>
+      <guid>https://anuragaryan.com/tags/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Templates</title>
-      <link>http://anuragaryan.com/tags/templates/</link>
+      <link>https://anuragaryan.com/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://anuragaryan.com/tags/templates/</guid>
+      <guid>https://anuragaryan.com/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Themes</title>
-      <link>http://anuragaryan.com/tags/themes/</link>
+      <link>https://anuragaryan.com/tags/themes/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://anuragaryan.com/tags/themes/</guid>
+      <guid>https://anuragaryan.com/tags/themes/</guid>
       <description></description>
     </item>
     
