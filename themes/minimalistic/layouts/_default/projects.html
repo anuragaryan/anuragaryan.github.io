@@ -6,7 +6,12 @@
       {{ range $i, $el := .Site.Data.projects.source }}
         <h4>
           <i class="{{ .icon }}"></i>&nbsp;&nbsp;
-          <a class="project-name" href="#">{{ $el.name }}</a>&nbsp;-&nbsp;{{ $el.description }}
+          {{ if $el.url }}
+            <a class="project-name" href="{{ $el.url }}"><b>{{ $el.name }}</b></a>
+          {{else}}
+            <a class="project-name-without-url"><b>{{ $el.name }}</b></a>
+          {{ end }}
+          &nbsp;-&nbsp;{{ $el.description }}
         </h4>
       {{ end }}
       </div>

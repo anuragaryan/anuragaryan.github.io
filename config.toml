@@ -2,7 +2,7 @@ baseurl = "https://anuragaryan.com/"
 languageCode = "en-US"
 title = "Anurag Aryan"
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "anuragaryan"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = "UA-58039575-2"
 theme = "minimalistic"

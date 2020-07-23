@@ -1,29 +1,21 @@
 name: Projects
 source:
   - icon: fa fa-github
-    name: Project X
-    description: Ei viderer tacimates pro, quem assum ea nam. Veritus omnesque eam te. Et natum mucius tamquam vel, ea dolorem volumus deterruisset nec. Graeci mentitum sea an, eu prima elaboraret est.
+    name: Flutter Chat
+    url: https://github.com/anuragaryan/flutter-chat
+    description: A Chat app made in Flutter framework using Dart lang, for both android and iOS.
 
   - icon: fa fa-github
-    name: Project X
-    description: An eripuit phaedrum qui, nec facer splendide ex, vel ea assum facilisi convenire. Te his neglegentur consectetuer.
-
-  - icon: fa fa-github
-    name: Project X
-    description: An alii quot tantas eum, doming platonem persecuti mea et, vim perpetua cotidieque delicatissimi in.
+    name: Youtube React
+    url: https://github.com/anuragaryan/youtube-react
+    description: A YouTube clone using React and YouTube APIs.
 
   - icon: fa fa-globe
-    name: Project X
-    description: Vim an case vidit sententiae, est at euismod laboramus efficiantur. Ei sit brute lorem, ea eam timeam viderer aliquid, cu integre omittam moderatius quo.
+    name: Get Anything
+    url: 
+    description: A webapp to make any ad-hoc request.
 
-  - icon: fa fa-globe
-    name: Project X
-    description: Dicta causae meliore ex vel, in vix erant integre petentium. Vix ei nisl scripta recusabo, eam doming blandit facilisis.
-
-  - icon: fa fa-cog
-    name: Project X
-    description: Inermis recusabo elaboraret mea et, dicat neglegentur vim te. Nec et sanctus scriptorem, usu ex sapientem gubergren. Tamquam admodum ei usu.
-
-  - icon: fa fa-cog
-    name: Project X
-    description: Essent putant indoctum sed in, reprimique persequeris neglegentur te quo. Nam rebum tractatos partiendo at, debet ubique oporteat ut his.
+  # - icon: fa fa-cog
+  #   name: Placeholder
+  #   url: 
+  #   description: Placeholder 
