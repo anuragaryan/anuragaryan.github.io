@@ -1,201 +1,76 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="map[]" />
-    <meta name="description" content="My personal corner on Internet.">
-    <link rel="shortcut icon" type="image/x-icon" href="https://anuragaryan.com/img/favicon.ico">
-    <title>Migrate to Hugo from Jekyll</title>
-    <meta name="generator" content="Hugo 0.32-DEV" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://anuragaryan.com/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="https://anuragaryan.com/css/resume.css" /><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css">
-    
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
-    
-    <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
-    
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-58039575-2', 'auto');
-ga('send', 'pageview');
-</script>
-
-  </head>
-
-  <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="https://anuragaryan.com/">Anurag Aryan</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      
-        
-        <li class="nav-item"><a class="nav-link" href="/blog/">BLOG</a></li>
-        
-        <li class="nav-item"><a class="nav-link" href="/projects/">PROJECTS</a></li>
-        
-        <li class="nav-item"><a class="nav-link" href="/resume/">RESUME</a></li>
-        
-      
-    </ul>
-  </div>
-</nav>
-
-    
-    <div class="container-fluid">
-      <div class="container">
-        <div class="blog-post text-center">
-          <h2>
-            <strong><a href="https://anuragaryan.com/blog/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></strong>
-          </h2>
-        </div>
-        <div class="blog-title text-center">
-          <h4>
-          March 10, 2014
-            &nbsp;&nbsp;
-            
-          </h4>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <div class="blogpost">
-              
-
-<h2 id="move-static-content-to-static">Move static content to <code>static</code></h2>
-
-<p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
-With Jekyll, something that looked like</p>
-
-<pre><code>▾ &lt;root&gt;/
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="map[]"><meta name=description content="My personal corner on Internet."><link rel="shortcut icon" type=image/x-icon href=https://anuragaryan.com/img/favicon.ico><title>Migrate to Hugo from Jekyll</title><meta name=generator content="Hugo 0.85.0"><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css integrity=sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb crossorigin=anonymous><link href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet integrity=sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN crossorigin=anonymous><link rel=stylesheet type=text/css href=https://anuragaryan.com/css/main.css><link rel=stylesheet type=text/css href=https://anuragaryan.com/css/resume.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css><link rel=stylesheet type=text/css href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old"><!--[if lt IE 9]><script src=https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script><script src=https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js></script><![endif]--><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-58039575-2','auto'),ga('send','pageview'))</script></head><body><nav class="navbar navbar-expand-lg navbar-light"><a class=navbar-brand href=https://anuragaryan.com/>Anurag Aryan</a>
+<button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/blog/>BLOG</a></li><li class=nav-item><a class=nav-link href=/projects/>PROJECTS</a></li><li class=nav-item><a class=nav-link href=/resume/>RESUME</a></li></ul></div></nav><div class=container-fluid><div class=container><div class="blog-post text-center"><h2><strong><a href=https://anuragaryan.com/blog/migrate-from-jekyll/>Migrate to Hugo from Jekyll</a></strong></h2></div><div class="blog-title text-center"><h4>March 10, 2014
+&nbsp;&nbsp;</h4></div><div class="panel panel-default"><div class=panel-body><div class=blogpost><h2 id=move-static-content-to-static>Move static content to <code>static</code></h2><p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
+With Jekyll, something that looked like</p><pre><code>▾ &lt;root&gt;/
     ▾ images/
         logo.png
-</code></pre>
-
-<p>should become</p>
-
-<pre><code>▾ &lt;root&gt;/
+</code></pre><p>should become</p><pre><code>▾ &lt;root&gt;/
     ▾ static/
         ▾ images/
             logo.png
-</code></pre>
-
-<p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
-
-<h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
-
-<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="/overview/configuration/">Hugo configuration documentation</a> for details.</p>
-
-<h2 id="set-your-configuration-publish-folder-to-site">Set your configuration publish folder to <code>_site</code></h2>
-
-<p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p>
-
-<ol>
-<li><p>Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).</p>
-
-<pre><code>git submodule deinit _site
-git rm _site
-git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
-</code></pre></li>
-
-<li><p>Or, change the Hugo configuration to use <code>_site</code> instead of <code>public</code>.</p>
-
-<pre><code>{
-    ..
-    &quot;publishdir&quot;: &quot;_site&quot;,
-    ..
-}
-</code></pre></li>
-</ol>
-
-<h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
-
-<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
-
-<p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
-
-<h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
-
-<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
-
-<h3 id="implementation">Implementation</h3>
-
-<p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
-
-<p>Jekyll&rsquo;s plugin:</p>
-
-<pre><code class="language-ruby">    module Jekyll
-      class ImageTag &lt; Liquid::Tag
-        @url = nil
-        @caption = nil
-        @class = nil
-        @link = nil
-        // Patterns
-        IMAGE_URL_WITH_CLASS_AND_CAPTION =
-        IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i
-        IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;/i
-        IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
-        IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
-        def initialize(tag_name, markup, tokens)
-          super
-          if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK
-            @class   = $1
-            @url     = $3
-            @caption = $7
-            @link = $9
-          elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
-            @class   = $1
-            @url     = $3
-            @caption = $7
-          elsif markup =~ IMAGE_URL_WITH_CAPTION
-            @url     = $1
-            @caption = $5
-          elsif markup =~ IMAGE_URL_WITH_CLASS
-            @class = $1
-            @url   = $3
-          elsif markup =~ IMAGE_URL
-            @url = $1
-          end
-        end
-        def render(context)
-          if @class
-            source = &quot;&lt;figure class='#{@class}'&gt;&quot;
-          else
-            source = &quot;&lt;figure&gt;&quot;
-          end
-          if @link
-            source += &quot;&lt;a href=\&quot;#{@link}\&quot;&gt;&quot;
-          end
-          source += &quot;&lt;img src=\&quot;#{@url}\&quot;&gt;&quot;
-          if @link
-            source += &quot;&lt;/a&gt;&quot;
-          end
-          source += &quot;&lt;figcaption&gt;#{@caption}&lt;/figcaption&gt;&quot; if @caption
-          source += &quot;&lt;/figure&gt;&quot;
+</code></pre><p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p><h2 id=create-your-hugo-configuration-file>Create your Hugo configuration file</h2><p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href=/overview/configuration/>Hugo configuration documentation</a> for details.</p><h2 id=set-your-configuration-publish-folder-to-_site>Set your configuration publish folder to <code>_site</code></h2><p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href=http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p><ol><li><p>Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).</p><pre><code> git submodule deinit _site
+ git rm _site
+ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
+</code></pre></li><li><p>Or, change the Hugo configuration to use <code>_site</code> instead of <code>public</code>.</p><pre><code> {
+     ..
+     &quot;publishdir&quot;: &quot;_site&quot;,
+     ..
+ }
+</code></pre></li></ol><h2 id=convert-jekyll-templates-to-hugo-templates>Convert Jekyll templates to Hugo templates</h2><p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href=http://jekyllrb.com/docs/templates/>Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href=/layout/templates/>Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p><p>As a single reference data point, converting my templates for <a href=http://heyitsalex.net/>heyitsalex.net</a> took me no more than a few hours.</p><h2 id=convert-jekyll-plugins-to-hugo-shortcodes>Convert Jekyll plugins to Hugo shortcodes</h2><p>Jekyll has <a href=http://jekyllrb.com/docs/plugins/>plugins</a>; Hugo has <a href=/doc/shortcodes/>shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p><h3 id=implementation>Implementation</h3><p>As an example, I was using a custom <a href=https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p><p>Jekyll&rsquo;s plugin:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ruby data-lang=ruby>    <span style=color:#66d9ef>module</span> Jekyll
+      <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>ImageTag</span> <span style=color:#f92672>&lt;</span> <span style=color:#66d9ef>Liquid</span><span style=color:#f92672>::</span><span style=color:#66d9ef>Tag</span>
+        @url <span style=color:#f92672>=</span> <span style=color:#66d9ef>nil</span>
+        @caption <span style=color:#f92672>=</span> <span style=color:#66d9ef>nil</span>
+        @class <span style=color:#f92672>=</span> <span style=color:#66d9ef>nil</span>
+        @link <span style=color:#f92672>=</span> <span style=color:#66d9ef>nil</span>
+        <span style=color:#e6db74>//</span> <span style=color:#66d9ef>Patterns</span>
+        <span style=color:#66d9ef>IMAGE_URL_WITH_CLASS_AND_CAPTION</span> <span style=color:#f92672>=</span>
+        <span style=color:#66d9ef>IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>/(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&#34;(.*?)&#34;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i</span>
+        <span style=color:#66d9ef>IMAGE_URL_WITH_CAPTION</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>/((https?:\/\/|\/)(\S+))(\s+)&#34;(.*?)&#34;/i</span>
+        <span style=color:#66d9ef>IMAGE_URL_WITH_CLASS</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>/(\w+)(\s+)((https?:\/\/|\/)(\S+))/i</span>
+        <span style=color:#66d9ef>IMAGE_URL</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>/((https?:\/\/|\/)(\S+))/i</span>
+        <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>initialize</span>(tag_name, markup, tokens)
+          <span style=color:#66d9ef>super</span>
+          <span style=color:#66d9ef>if</span> markup <span style=color:#f92672>=~</span> <span style=color:#66d9ef>IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK</span>
+            @class   <span style=color:#f92672>=</span> $1
+            @url     <span style=color:#f92672>=</span> $3
+            @caption <span style=color:#f92672>=</span> $7
+            @link <span style=color:#f92672>=</span> $9
+          <span style=color:#66d9ef>elsif</span> markup <span style=color:#f92672>=~</span> <span style=color:#66d9ef>IMAGE_URL_WITH_CLASS_AND_CAPTION</span>
+            @class   <span style=color:#f92672>=</span> $1
+            @url     <span style=color:#f92672>=</span> $3
+            @caption <span style=color:#f92672>=</span> $7
+          <span style=color:#66d9ef>elsif</span> markup <span style=color:#f92672>=~</span> <span style=color:#66d9ef>IMAGE_URL_WITH_CAPTION</span>
+            @url     <span style=color:#f92672>=</span> $1
+            @caption <span style=color:#f92672>=</span> $5
+          <span style=color:#66d9ef>elsif</span> markup <span style=color:#f92672>=~</span> <span style=color:#66d9ef>IMAGE_URL_WITH_CLASS</span>
+            @class <span style=color:#f92672>=</span> $1
+            @url   <span style=color:#f92672>=</span> $3
+          <span style=color:#66d9ef>elsif</span> markup <span style=color:#f92672>=~</span> <span style=color:#66d9ef>IMAGE_URL</span>
+            @url <span style=color:#f92672>=</span> $1
+          <span style=color:#66d9ef>end</span>
+        <span style=color:#66d9ef>end</span>
+        <span style=color:#66d9ef>def</span> <span style=color:#a6e22e>render</span>(context)
+          <span style=color:#66d9ef>if</span> @class
+            source <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&lt;figure class=&#39;</span><span style=color:#e6db74>#{</span>@class<span style=color:#e6db74>}</span><span style=color:#e6db74>&#39;&gt;&#34;</span>
+          <span style=color:#66d9ef>else</span>
+            source <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&lt;figure&gt;&#34;</span>
+          <span style=color:#66d9ef>end</span>
+          <span style=color:#66d9ef>if</span> @link
+            source <span style=color:#f92672>+=</span> <span style=color:#e6db74>&#34;&lt;a href=</span><span style=color:#ae81ff>\&#34;</span><span style=color:#e6db74>#{</span>@link<span style=color:#e6db74>}</span><span style=color:#ae81ff>\&#34;</span><span style=color:#e6db74>&gt;&#34;</span>
+          <span style=color:#66d9ef>end</span>
+          source <span style=color:#f92672>+=</span> <span style=color:#e6db74>&#34;&lt;img src=</span><span style=color:#ae81ff>\&#34;</span><span style=color:#e6db74>#{</span>@url<span style=color:#e6db74>}</span><span style=color:#ae81ff>\&#34;</span><span style=color:#e6db74>&gt;&#34;</span>
+          <span style=color:#66d9ef>if</span> @link
+            source <span style=color:#f92672>+=</span> <span style=color:#e6db74>&#34;&lt;/a&gt;&#34;</span>
+          <span style=color:#66d9ef>end</span>
+          source <span style=color:#f92672>+=</span> <span style=color:#e6db74>&#34;&lt;figcaption&gt;</span><span style=color:#e6db74>#{</span>@caption<span style=color:#e6db74>}</span><span style=color:#e6db74>&lt;/figcaption&gt;&#34;</span> <span style=color:#66d9ef>if</span> @caption
+          source <span style=color:#f92672>+=</span> <span style=color:#e6db74>&#34;&lt;/figure&gt;&#34;</span>
           source
-        end
-      end
-    end
-    Liquid::Template.register_tag('image', Jekyll::ImageTag)
-</code></pre>
-
-<p>is written as this Hugo shortcode:</p>
-
-<pre><code>&lt;!-- image --&gt;
+        <span style=color:#66d9ef>end</span>
+      <span style=color:#66d9ef>end</span>
+    <span style=color:#66d9ef>end</span>
+    <span style=color:#66d9ef>Liquid</span><span style=color:#f92672>::</span><span style=color:#66d9ef>Template</span><span style=color:#f92672>.</span>register_tag(<span style=color:#e6db74>&#39;image&#39;</span>, <span style=color:#66d9ef>Jekyll</span><span style=color:#f92672>::</span><span style=color:#66d9ef>ImageTag</span>)
+</code></pre></div><p>is written as this Hugo shortcode:</p><pre><code>&lt;!-- image --&gt;
 &lt;figure {{ with .Get &quot;class&quot; }}class=&quot;{{.}}&quot;{{ end }}&gt;
     {{ with .Get &quot;link&quot;}}&lt;a href=&quot;{{.}}&quot;&gt;{{ end }}
         &lt;img src=&quot;{{ .Get &quot;src&quot; }}&quot; {{ if or (.Get &quot;alt&quot;) (.Get &quot;caption&quot;) }}alt=&quot;{{ with .Get &quot;alt&quot;}}{{.}}{{else}}{{ .Get &quot;caption&quot; }}{{ end }}&quot;{{ end }} /&gt;
@@ -213,82 +88,6 @@ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
     {{ end }}
 &lt;/figure&gt;
 &lt;!-- image --&gt;
-</code></pre>
-
-<h3 id="usage">Usage</h3>
-
-<p>I simply changed:</p>
-
-<pre><code>{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &quot;having fun&quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
-</code></pre>
-
-<p>to this (this example uses a slightly extended version named <code>fig</code>, different than the built-in <code>figure</code>):</p>
-
-<pre><code>{{% fig class=&quot;full&quot; src=&quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot; title=&quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; link=&quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot; %}}
-</code></pre>
-
-<p>As a bonus, the shortcode named parameters are, arguably, more readable.</p>
-
-<h2 id="finishing-touches">Finishing touches</h2>
-
-<h3 id="fix-content">Fix content</h3>
-
-<p>Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that <code>hugo server --watch</code> is your friend. Test your changes and fix errors as needed.</p>
-
-<h3 id="clean-up">Clean up</h3>
-
-<p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p>
-
-<h2 id="a-practical-example-in-a-diff">A practical example in a diff</h2>
-
-<p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
-
-              <hr>
-              <div class="related-posts">
-                <h5>Related Posts</h5>
-                
-              </div>
-            </div>
-          </div>
-          <hr>
-        <div class="disqus">
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-
-    (function() {
-      
-      
-      if (window.location.hostname == "localhost")
-        return;
-
-      var disqus_shortname = 'anuragaryan';
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-        </div>
-        
-      </div>
-    </div>
-
-    
-    <p class="copyright">&copy; Anurag Aryan | <script>document.write(new Date().getFullYear())</script></p>
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-<script src="https://anuragaryan.com/js/ie10-viewport-bug-workaround.js"></script><!-- Syntax highlighting -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-
-  </body>
-</html>
+</code></pre><h3 id=usage>Usage</h3><p>I simply changed:</p><pre><code>{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &quot;having fun&quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
+</code></pre><p>to this (this example uses a slightly extended version named <code>fig</code>, different than the built-in <code>figure</code>):</p><pre><code>{{% fig class=&quot;full&quot; src=&quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot; title=&quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; link=&quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot; %}}
+</code></pre><p>As a bonus, the shortcode named parameters are, arguably, more readable.</p><h2 id=finishing-touches>Finishing touches</h2><h3 id=fix-content>Fix content</h3><p>Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that <code>hugo server --watch</code> is your friend. Test your changes and fix errors as needed.</p><h3 id=clean-up>Clean up</h3><p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p><h2 id=a-practical-example-in-a-diff>A practical example in a diff</h2><p><a href=http://heyitsalex.net/>Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href=https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610>diff</a>.</p><hr><div class=related-posts><h5>Related Posts</h5></div></div></div><hr><div class=disqus><div id=disqus_thread></div><script type=text/javascript>(function(){var b,a;if(window.location.hostname=="localhost")return;b='anuragaryan',a=document.createElement('script'),a.type='text/javascript',a.async=!0,a.src='//'+b+'.disqus.com/embed.js',(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(a)})()</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></div></div></div><p class=copyright>&copy; Anurag Aryan | <script>document.write((new Date).getFullYear())</script></p><script src=https://code.jquery.com/jquery-3.2.1.slim.min.js integrity=sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js integrity=sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh crossorigin=anonymous></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js integrity=sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ crossorigin=anonymous></script><script src=https://anuragaryan.com/js/ie10-viewport-bug-workaround.js></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js></script><script>hljs.initHighlightingOnLoad()</script></body></html>
