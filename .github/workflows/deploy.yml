@@ -3,7 +3,7 @@ name: Deploy Hugo website
 on:
   push:
     branches:
-      - source  # Set a branch to deploy
+      - sources  # Set a branch to deploy
 
 jobs:
   deploy:
