@@ -1,4 +1,5 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="map[]"><meta name=description content="My personal corner on Internet."><link rel="shortcut icon" type=image/x-icon href=https://anuragaryan.com/img/favicon.ico><title>(Hu)go Template Primer</title><meta name=generator content="Hugo 0.85.0"><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css integrity=sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb crossorigin=anonymous><link href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet integrity=sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN crossorigin=anonymous><link rel=stylesheet type=text/css href=https://anuragaryan.com/css/main.css><link rel=stylesheet type=text/css href=https://anuragaryan.com/css/resume.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css><link rel=stylesheet type=text/css href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old"><!--[if lt IE 9]><script src=https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script><script src=https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js></script><![endif]--><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-58039575-2','auto'),ga('send','pageview'))</script></head><body><nav class="navbar navbar-expand-lg navbar-light"><a class=navbar-brand href=https://anuragaryan.com/>Anurag Aryan</a>
+<!doctype html><html lang=en-US><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="map[]"><meta name=description content="My personal corner on Internet."><link rel="shortcut icon" type=image/x-icon href=https://anuragaryan.com/img/favicon.ico><title>(Hu)go Template Primer</title><meta name=generator content="Hugo 0.119.0"><link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css integrity=sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb crossorigin=anonymous><link href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet integrity=sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN crossorigin=anonymous><link rel=stylesheet type=text/css href=https://anuragaryan.com/css/main.css><link rel=stylesheet type=text/css href=https://anuragaryan.com/css/resume.css><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css><link rel=stylesheet type=text/css href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old"><!--[if lt IE 9]><script src=https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js></script>
+<script src=https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js></script><![endif]--><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-58039575-2","auto"),ga("send","pageview"))</script></head><body><nav class="navbar navbar-expand-lg navbar-light"><a class=navbar-brand href=https://anuragaryan.com/>Anurag Aryan</a>
 <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
 <span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarSupportedContent><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=/blog/>BLOG</a></li><li class=nav-item><a class=nav-link href=/projects/>PROJECTS</a></li><li class=nav-item><a class=nav-link href=/resume/>RESUME</a></li></ul></div></nav><div class=container-fluid><div class=container><div class="blog-post text-center"><h2><strong><a href=https://anuragaryan.com/blog/goisforlovers/>(Hu)go Template Primer</a></strong></h2></div><div class="blog-title text-center"><h4>April 2, 2014
 &nbsp;&nbsp;
@@ -102,12 +103,12 @@ you want to inside of your templates.</p><h2 id=using-content-page-parameters>Us
 templates. This happens in the <a href=/content/front-matter>front matter</a>.</p><p>An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
 doesn&rsquo;t make a lot of sense. We&rsquo;ve defined a variable in our front matter
-of some pages to turn off the TOC from being displayed.</p><p>Here is the example front matter:</p><pre><code>---
-title: &quot;Permalinks&quot;
-date: &quot;2013-11-18&quot;
+of some pages to turn off the TOC from being displayed.</p><p>Here is the example front matter:</p><pre tabindex=0><code>---
+title: &#34;Permalinks&#34;
+date: &#34;2013-11-18&#34;
 aliases:
-  - &quot;/doc/permalinks/&quot;
-groups: [&quot;extras&quot;]
+  - &#34;/doc/permalinks/&#34;
+groups: [&#34;extras&#34;]
 groups_weight: 30
 notoc: true
 ---
@@ -117,29 +118,34 @@ notoc: true
     &lt;/div&gt;
   {{ end }}
 </code></pre><h2 id=using-site-config-parameters>Using Site (config) Parameters</h2><p>In your top-level configuration file (eg, <code>config.yaml</code>) you can define site
-parameters, which are values which will be available to you in chrome.</p><p>For instance, you might declare:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#f92672>params</span>:
-  <span style=color:#f92672>CopyrightHTML</span>: <span style=color:#e6db74>&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span>
-  <span style=color:#f92672>TwitterUser</span>: <span style=color:#e6db74>&#34;spf13&#34;</span>
-  <span style=color:#f92672>SidebarRecentLimit</span>: <span style=color:#ae81ff>5</span>
-</code></pre></div><p>Within a footer layout, you might then declare a <code>&lt;footer></code> which is only
+parameters, which are values which will be available to you in chrome.</p><p>For instance, you might declare:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#f92672>params</span>:
+</span></span><span style=display:flex><span>  <span style=color:#f92672>CopyrightHTML</span>: <span style=color:#e6db74>&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>TwitterUser</span>: <span style=color:#e6db74>&#34;spf13&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#f92672>SidebarRecentLimit</span>: <span style=color:#ae81ff>5</span>
+</span></span></code></pre></div><p>Within a footer layout, you might then declare a <code>&lt;footer></code> which is only
 provided if the <code>CopyrightHTML</code> parameter is provided, and if it is given,
 you would declare it to be HTML-safe, so that the HTML entity is not escaped
 again. This would let you easily update just your top-level config file each
-January 1st, instead of hunting through your templates.</p><pre><code>{{if .Site.Params.CopyrightHTML}}&lt;footer&gt;
-&lt;div class=&quot;text-center&quot;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
+January 1st, instead of hunting through your templates.</p><pre tabindex=0><code>{{if .Site.Params.CopyrightHTML}}&lt;footer&gt;
+&lt;div class=&#34;text-center&#34;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
 &lt;/footer&gt;{{end}}
 </code></pre><p>An alternative way of writing the &ldquo;if&rdquo; and then referencing the same value
 is to use &ldquo;with&rdquo; instead. With rebinds the context <code>.</code> within its scope,
-and skips the block if the variable is absent:</p><pre><code>{{with .Site.Params.TwitterUser}}&lt;span class=&quot;twitter&quot;&gt;
-&lt;a href=&quot;https://twitter.com/{{.}}&quot; rel=&quot;author&quot;&gt;
-&lt;img src=&quot;/images/twitter.png&quot; width=&quot;48&quot; height=&quot;48&quot; title=&quot;Twitter: {{.}}&quot;
- alt=&quot;Twitter&quot;&gt;&lt;/a&gt;
+and skips the block if the variable is absent:</p><pre tabindex=0><code>{{with .Site.Params.TwitterUser}}&lt;span class=&#34;twitter&#34;&gt;
+&lt;a href=&#34;https://twitter.com/{{.}}&#34; rel=&#34;author&#34;&gt;
+&lt;img src=&#34;/images/twitter.png&#34; width=&#34;48&#34; height=&#34;48&#34; title=&#34;Twitter: {{.}}&#34;
+ alt=&#34;Twitter&#34;&gt;&lt;/a&gt;
 &lt;/span&gt;{{end}}
 </code></pre><p>Finally, if you want to pull &ldquo;magic constants&rdquo; out of your layouts, you can do
-so, such as in this example:</p><pre><code>&lt;nav class=&quot;recent&quot;&gt;
+so, such as in this example:</p><pre tabindex=0><code>&lt;nav class=&#34;recent&#34;&gt;
   &lt;h1&gt;Recent Posts&lt;/h1&gt;
   &lt;ul&gt;{{range first .Site.Params.SidebarRecentLimit .Site.Recent}}
-    &lt;li&gt;&lt;a href=&quot;{{.RelPermalink}}&quot;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;{{.RelPermalink}}&#34;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
   {{end}}&lt;/ul&gt;
 &lt;/nav&gt;
-</code></pre><hr><div class=related-posts><h5>Related Posts</h5><div class=row><div class="col-sm-4 col-md-4 col-lg-4"><h6 class=text-right>April 2, 2014</h6></div><div class="col-sm-8 col-md-8 col-lg-8"><h5 class=text-left><strong><a href=/blog/hugoisforlovers/>Getting Started with Hugo</a></strong></h5></div></div></div></div></div><hr><div class=disqus><div id=disqus_thread></div><script type=text/javascript>(function(){var b,a;if(window.location.hostname=="localhost")return;b='anuragaryan',a=document.createElement('script'),a.type='text/javascript',a.async=!0,a.src='//'+b+'.disqus.com/embed.js',(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(a)})()</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></div></div></div><p class=copyright>&copy; Anurag Aryan | <script>document.write((new Date).getFullYear())</script></p><script src=https://code.jquery.com/jquery-3.2.1.slim.min.js integrity=sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js integrity=sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh crossorigin=anonymous></script><script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js integrity=sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ crossorigin=anonymous></script><script src=https://anuragaryan.com/js/ie10-viewport-bug-workaround.js></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js></script><script>hljs.initHighlightingOnLoad()</script></body></html>
+</code></pre><hr><div class=related-posts><h5>Related Posts</h5><div class=row><div class="col-sm-4 col-md-4 col-lg-4"><h6 class=text-right>April 2, 2014</h6></div><div class="col-sm-8 col-md-8 col-lg-8"><h5 class=text-left><strong><a href=/blog/hugoisforlovers/>Getting Started with Hugo</a></strong></h5></div></div></div></div></div><hr><div class=disqus><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname=="localhost")return;var t="anuragaryan",e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></div></div></div><p class=copyright>&copy; Anurag Aryan | <script>document.write((new Date).getFullYear())</script></p><script src=https://code.jquery.com/jquery-3.2.1.slim.min.js integrity=sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js integrity=sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh crossorigin=anonymous></script>
+<script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js integrity=sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ crossorigin=anonymous></script>
+<script src=https://anuragaryan.com/js/ie10-viewport-bug-workaround.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js></script>
+<script>hljs.initHighlightingOnLoad()</script></body></html>
