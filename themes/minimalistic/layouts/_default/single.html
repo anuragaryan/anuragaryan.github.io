@@ -48,7 +48,7 @@
             </div>
           </div>
           <hr>
-        {{ partial "disqus" . }}
+        {{ if isset .Site "DisqusShortname" }}{{ partial "disqus" . }}{{ end }}
         </div>
         {{ end }}
       </div>
