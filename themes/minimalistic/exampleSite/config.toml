@@ -1,11 +1,13 @@
 baseurl = "https://example.com/"
 languageCode = "en-US"
 title = "Anurag Aryan"
-# Enable comments by entering your Disqus shortname
-disqusShortname = ""
-# Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
 theme = "hugo-sustain"
+
+[services]
+  [services.disqus]
+    shortname = ""
+  [services.googleAnalytics]
+    id = ""
 
 [permalinks]
   post = "/:year/:month/:day/:slug"
