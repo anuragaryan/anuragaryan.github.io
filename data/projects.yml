@@ -1,5 +1,20 @@
 name: Projects
 source:
+  - icon: fa fa-globe
+    name: Noti
+    url: https://anuragaryan.com/noti/
+    description: An AI first Note Editor.
+
+  - icon: fa fa-globe
+    name: 3dXO
+    url: https://anuragaryan.com/3dxo/
+    description: A multi-player 3D tic-tac-toe app.
+
+  - icon: fa fa-globe
+    name: Image Compression
+    url: https://anuragaryan.com/image-compression/
+    description: Compress images locally on your browser.
+
   - icon: fa fa-github
     name: Flutter Chat
     url: https://github.com/anuragaryan/flutter-chat
