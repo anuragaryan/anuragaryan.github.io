@@ -10,14 +10,17 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          # fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          go-version-file: go.mod
+          cache: true
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.165.0'
           # extended: true
 
       - name: Build
