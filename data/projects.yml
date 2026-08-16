@@ -1,36 +1,36 @@
 name: Projects
 source:
-  - icon: fa fa-globe
+  - icon: fa-solid fa-globe
     name: Noti
     url: https://anuragaryan.com/noti/
     description: An AI first Note Editor.
 
-  - icon: fa fa-globe
+  - icon: fa-solid fa-globe
     name: 3dXO
     url: https://anuragaryan.com/3dxo/
     description: A multi-player 3D tic-tac-toe app.
 
-  - icon: fa fa-globe
+  - icon: fa-solid fa-globe
     name: Image Compression
     url: https://anuragaryan.com/image-compression/
     description: Compress images locally on your browser.
 
-  - icon: fa fa-github
+  - icon: fa-brands fa-github
     name: Flutter Chat
     url: https://github.com/anuragaryan/flutter-chat
     description: A Chat app made in Flutter framework using Dart lang, for both android and iOS.
 
-  - icon: fa fa-github
+  - icon: fa-brands fa-github
     name: Youtube React
     url: https://github.com/anuragaryan/youtube-react
     description: A YouTube clone using React and YouTube APIs.
 
-  - icon: fa fa-globe
+  - icon: fa-solid fa-globe
     name: Get Anything
     url: 
     description: A webapp to make any ad-hoc request.
 
-  # - icon: fa fa-cog
+  # - icon: fa-solid fa-gear
   #   name: Placeholder
   #   url: 
   #   description: Placeholder 
